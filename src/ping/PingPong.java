@@ -12,9 +12,9 @@ public class PingPong extends PApplet{
 	}
 
 	//walls
-	float wallThick = 20;
+	private float wallThick = 20;
 	//paddle
-	float paddleHeight = wallThick*4;
+	private float paddleHeight = wallThick*4;
 	float paddlePosL;
 	float paddlePosR;
 	boolean[] paddleLMove = new boolean[2];
@@ -27,7 +27,7 @@ public class PingPong extends PApplet{
 	float ballspeed;
 	float ballySpeed;
 	//Point
-	int pointLeft = 0;
+	private int pointLeft = 0;
 	int pointRight = 0;
 	//start
 	boolean start;
@@ -38,6 +38,7 @@ public class PingPong extends PApplet{
 	}
 
 	public void setup() {
+		settings();
 		stonePos = new int[5];
 		reset();
 	}
